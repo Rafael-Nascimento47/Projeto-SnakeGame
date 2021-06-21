@@ -8,8 +8,8 @@ snake[0] = {
 }
 let direction = "right";
 let food = {
-    x: Math.floor(Math.random() * 43 + 1) * box,
-    y: Math.floor(Math.random() * 23 + 1) * box
+    x: Math.floor(Math.random() * 40 + 1) * box,
+    y: Math.floor(Math.random() * 20 + 1) * box
 }
 
 
@@ -72,8 +72,8 @@ function inciarJogo(){
     if(snakeX != food.x || snakeY != food.y){
         snake.pop();
     }
-    else{food.x = Math.floor(Math.random() * 43 + 1) * box;
-         food.y = Math.floor(Math.random() * 23 + 1) * box;
+    else{food.x = Math.floor(Math.random() * 40 + 1) * box;
+         food.y = Math.floor(Math.random() * 20 + 1) * box;
     }
 
 
